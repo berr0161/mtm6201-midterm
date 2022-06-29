@@ -135,22 +135,11 @@ html, body {
   }
 }
 
-.banner {
-    width: 600px;
-    height: 400px;
+.banner{
+    background-image: url(..images/alternative-banner.jpg);
 }
 
-.inlove{
-    width: 600px;
-    height: 400px;
-}
-
-.divorce{
-    width: 600px;
-    height: 400px;
-}
-
-.baby{
+.about-image {
     width: 600px;
     height: 400px;
 }
