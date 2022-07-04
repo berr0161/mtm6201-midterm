@@ -1,5 +1,4 @@
 
-
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
   vertical-align: center;
@@ -221,3 +220,11 @@ li {
   width: 100px;
 }
 
+.comment1{
+  display: flex;
+  flex-direction: row;
+}
+
+.clearfix {
+  overflow: auto;
+}
