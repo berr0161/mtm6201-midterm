@@ -153,6 +153,7 @@ html, body {
 }
 
 .button1{
+margin:0;
 padding: 10px;
 color: white;
 background-color: #8200af;
@@ -160,6 +161,7 @@ border-radius: 1rem;
 }
 
 .maintext{
+  padding: 10px;
   background-color: #FFF9;
   border: 1px black solid;
 }
@@ -191,6 +193,11 @@ footer{
 
 .fa-solid{
   color: #8200af;
+}
+
+.second-nav dd{
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 dd{
@@ -227,4 +234,24 @@ li {
 
 .clearfix {
   overflow: auto;
+}
+
+.main-banner{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/Banner.jpg);
+}
+
+.content-banner{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.second-nav{
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
 }
