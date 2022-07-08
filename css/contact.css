@@ -1,7 +1,3 @@
-body{
-    background-color: bisque;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
   vertical-align: center;
@@ -135,6 +131,7 @@ html, body {
   }
 }
 
+/*
 .banner{
     text-align: center;
     color: #fff;
@@ -168,3 +165,93 @@ html, body {
     display: block;
     clear: both;
 }
+*/
+
+.banner{
+  padding: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../images/alternative-banner.jpg);
+}
+
+.banner h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.banner h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.banner p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+p{
+  text-align: center;
+}
+
+.contact-form{
+  padding: 1rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+}
+
+input[id=subject]{
+  width: 100%;
+  height: 80px;
+  padding: 5px 20px;
+  margin: 8px 0;
+}
+
+.contact-form p{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer{
+  color: #fff;
+  padding: 10px;
+  background-color: #8200af;
+  margin: auto;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+
+footer li{
+  text-decoration: none;
+}
+
+.fa-brands {
+  color: white;
+}
+
+footer a:hover{
+  color: #7ED957;
+}
+
+.fa-brands:hover {
+  color:#7ED957;
+}
+
