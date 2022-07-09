@@ -242,7 +242,7 @@ li {
 .main-banner{
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/Banner.jpg);
+  background-image: url(../images/main-banner.jpg);
 }
 
 .content-banner{

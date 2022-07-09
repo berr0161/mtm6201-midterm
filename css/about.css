@@ -133,6 +133,18 @@ html, body {
 }
 
 
+.banner{
+  padding: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../images/alternative-banner.jpg);
+}
+
+.banner h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
 .about-image {
     width: 600px;
     height: 400px;
