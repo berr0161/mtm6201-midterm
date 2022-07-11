@@ -134,6 +134,7 @@ html, body {
 
 
 .banner{
+  position: relative;
   padding: 10px;
   background-position: center center;
   background-size: cover;
@@ -144,7 +145,37 @@ html, body {
   text-align: center;
   font-size: 2.5rem;
   color: white;
+  z-index: 999;
+  position: relative;
 }
+
+.banner .banner-cover{
+  height: 100%;
+  position: absolute;
+  left:0;
+  top: 0;
+  background-color: black;
+  opacity: .5;
+  width: 100%;
+  z-index: 99;
+}
+
+.ceo-image {
+  width: 90%;
+  margin-left: 5%;
+}
+.content > p{
+width: 90%;
+margin-left: 5%;
+text-align: justify;
+
+}
+.ceo > p {
+width: 90%;
+margin-left: 5%;
+text-align: justify;
+}
+
 .about-image {
     width: 600px;
     height: 400px;
@@ -198,3 +229,35 @@ th{
   width:100%;
 }
 
+
+footer{
+  color: #fff;
+  padding: 10px;
+  background-color: #8200af;
+  margin: auto;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+
+footer li{
+  text-decoration: none;
+}
+
+.fa-brands {
+  color: white;
+}
+
+footer a:hover{
+  color: #7ED957;
+}
+
+.fa-brands:hover {
+  color:#7ED957;
+}
+
+ul {
+  list-style: none;
+}
