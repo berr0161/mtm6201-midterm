@@ -208,7 +208,8 @@ td, th {
 table {
   border: 1px solid black;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 tr:nth-child(1){
@@ -226,7 +227,9 @@ th{
 .map iframe {
   border:0;
   height: 400px;
-  width:100%;
+  width:90%;
+  margin-left: 5%;
+  padding-bottom: 1rem;
 }
 
 
@@ -260,4 +263,40 @@ footer a:hover{
 
 ul {
   list-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .our-story{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+/*
+.form{
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "area1 area2"
+  "area1 area2"
+}
+.schedule{
+  margin-bottom: 3rem;
+  grid-area:area12;
+}
+.schedule{
+  grid-area: area1;
+}
+.map{
+  grid-area: area2;
+}*/
 }

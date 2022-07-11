@@ -173,10 +173,12 @@ body {
 }
 
 .button2 {
+  margin: 0 auto;
   padding: 10px;
   color: white;
   background-color: #7ED957;
   border-radius: 1rem;
+  width: 150px;
 }
 
 .text {
@@ -338,4 +340,33 @@ footer a:hover {
 
 ul {
   list-style: none;
+}
+
+@media (min-width: 1280px) {
+  .second-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+ 
+  }
+  dl{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+  }
+  .button2 {
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    background-color: #7ED957;
+    border-radius: 1rem;
+    width: 120px;
+    height: 40px;
+  }
+
+  .flavors {
+    display: flex;
+    flex-direction: row;
+
+  }
 }
