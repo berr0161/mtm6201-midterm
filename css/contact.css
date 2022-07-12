@@ -131,42 +131,7 @@ html, body {
   }
 }
 
-/*
-.banner{
-    text-align: center;
-    color: #fff;
-    background-image: url("../images/alternative-banner.jpg");
-    top: 100px;
-    height: 50vh;
-    width: 100%;
-    padding: 10px;
-    top: 100px;
-    background-position: center center;
-    background-size: cover;
-    position: fixed;
-    overflow: auto;
-}
-
-.banner:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #7ed577;
-    z-index: -1;
-    opacity: .4;
-}
-
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-*/
-
+/*For the contact section, it creates a banner with the same background image as about section*/
 .banner{
   position: relative;
   padding: 10px;
@@ -174,7 +139,7 @@ html, body {
   background-size: cover;
   background-image:url(../images/alternative-banner.jpg);
 }
-
+/*There is a container containg all the content in the banner, it has a z-index bigger than the banner cover so its in at the front*/
 .banner .banner-content{
   z-index: 999;
   position: relative;
@@ -184,7 +149,7 @@ html, body {
     font-size: 2.5rem;
     color: white;
   }
-
+/*Creates a black cover for the banner, it has z-index smaller thant the title so is behind it*/
   .banner .banner-cover{
     height: 100%;
     position: absolute;
@@ -213,6 +178,7 @@ html, body {
 p{
   text-align: center;
 }
+
 .emoji{
   display: flex;
   flex-direction: column;
@@ -222,20 +188,20 @@ p{
 .contact-form{
   padding: 1rem;
 }
-
+/*For mobile Gives style to contact form affecting directly Fullname*/
 input[type=text] {
   width: 100%;
   padding: 5px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
-
+/* For mobile Gives style to contact form affecting directly Email*/
 input[type=email]{
   width: 100%;
   padding: 5px 20px;
   margin: 8px 0;
 }
-
+/* For mobile gives style to contact form affecting directly Subject*/
 input[id=subject]{
   width: 100%;
   height: 80px;
@@ -280,6 +246,7 @@ ul {
   list-style: none;
 }
 @media screen and (min-width: 1280px) {
+  /*The contact section contains the phone number and email, it gives space and centers it*/
   .contact{
     width: 50%;
     display: flex;
@@ -287,11 +254,12 @@ ul {
     margin: 0 auto;
     justify-content: space-between;
   }
+  
   .contact-form{
     width: 1000px;
     margin: auto;
   }
-  
+  /*For Desktop Gives style to contact form affecting directly Fullname*/
   input[type=text] {
     width: 100%;
     padding: 5px 20px;
@@ -299,12 +267,14 @@ ul {
     box-sizing: border-box;
   }
   
+  /*For mobile Gives style to contact form affecting directly Email*/
   input[type=email]{
     width: 100%;
     padding: 5px 20px;
     margin: 8px 0;
   }
   
+  /*For mobile Gives style to contact form affecting directly Subjcet*/
   input[id=subject]{
     height: 100px;
     width: 100%;
@@ -312,6 +282,7 @@ ul {
     padding: 5px 20px;
     margin: 8px 0;
   }
+  
 footer{
   display: flex;
   flex-direction: row;
