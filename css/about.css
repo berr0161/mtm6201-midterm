@@ -170,15 +170,16 @@ margin-left: 5%;
 text-align: justify;
 
 }
-.ceo > p {
+
+.about-section p {
 width: 90%;
 margin-left: 5%;
 text-align: justify;
 }
 
 .about-image {
-    width: 600px;
-    height: 400px;
+  margin-left: 5%;
+  width: 90%
 }
 
 h1{
@@ -265,38 +266,31 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
-  .about-section {
+  .about-section{
+    margin-top: 2rem;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
   }
-  .our-story{
-    display: flex;
-    flex-direction: row-reverse;
+
+  .about-section img {
+    width: 50%;
+    padding: 0 7%;
+    margin: 0;
   }
-  .form {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+  .about-section div {
+    width: 50%;
+    text-align: center;
+    padding: 0 2rem;
   }
-/*
-.form{
-  grid-gap: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-  "area1 area2"
-  "area1 area2"
+  .about-section div p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+.reverse{
+  flex-direction: row-reverse;
 }
-.schedule{
-  margin-bottom: 3rem;
-  grid-area:area12;
-}
-.schedule{
-  grid-area: area1;
-}
-.map{
-  grid-area: area2;
-}*/
+
 }

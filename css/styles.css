@@ -261,29 +261,43 @@ h3 {
   text-align: center;
 }
 
-.flavors p {
+.flavor{
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.flavor .button{
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+.button {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  background-color: #7ED957;
+  border-radius: 1rem;
+  width: 120px;
+  height: 40px;
+  
+}
+
+.flavor p {
+  padding: 0 1rem;
   font-size: 14px;
   text-align: center;
 }
 
-.flavors>img {
+.flavor >img {
   width: 90%;
   margin-left: 5%;
 }
 
-.comment1 {
-  margin: auto;
-  text-align: center;
-}
 
-.customers {
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.clearfix {
-  overflow: auto;
-}
 
 .main-banner {
   background-position: center center;
@@ -308,6 +322,20 @@ h3 {
   flex-direction: column;
   background-color: whitesmoke;
   width: 100%;
+}
+
+.comment {
+  margin: auto;
+  text-align: center;
+}
+
+.customers {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.customers dd {
+  margin: 0;
 }
 
 footer {
@@ -344,23 +372,78 @@ ul {
 
 @media (min-width: 1280px) {
   .second-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
- 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 4fr 1fr
   }
+
   dl{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  }
+
+  dl dd {
+    margin: 0;
+  }
+  .flavors-nav{
+    margin-bottom: 2rem;
+  }
+  .flavor{
     display: flex;
-    flex-direction: row;
-   justify-content: space-evenly;
+    
   }
-  .button2 {
-    margin: 0 auto;
-    padding: 10px;
-    color: white;
-    background-color: #7ED957;
-    border-radius: 1rem;
-    width: 120px;
-    height: 40px;
+  .flavor div {
+    padding: 0 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .flavor img{
+    border-radius: 20px;
+    width: 36%;
+    margin: 0;
+    margin-left: 7%;
+  }
+.flavor .button {
+  position: relative;
 }
+  
+  .reverse{
+  flex-direction: row-reverse;
+  }
+  .reverse img{
+    margin-right: 7%;
+    margin-left: 0;
+  }
+
+  .customers > div{
+    display: flex;
+    grid-gap: 1rem;
+    padding: 0 2rem;
+  }
+  .customers .comment{
+    margin: 0;
+    text-align: left;
+  }
+  .customers .commentator{
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    grid-gap:6px;
+  }
+
+  .customers .commentator dl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 4px;
+  }
+
+  .commentator img{
+    border-radius: 50%;
+  }
+}  
