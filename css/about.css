@@ -132,7 +132,7 @@ html, body {
   }
 }
 
-
+/*For both mobile and creates banner with a background image*/
 .banner{
   position: relative;
   padding: 10px;
@@ -141,6 +141,7 @@ html, body {
   background-image:url(../images/alternative-banner.jpg);
 }
 
+/*For the banner h1, that is about us gives a font size and it centers it, I gave a z-index so is not behind the following cover*/
 .banner h1{
   text-align: center;
   font-size: 2.5rem;
@@ -149,6 +150,7 @@ html, body {
   position: relative;
 }
 
+/*Creates a black cover for the banner, it has z-index smaller thant the h1 so is behind it*/
 .banner .banner-cover{
   height: 100%;
   position: absolute;
@@ -164,6 +166,7 @@ html, body {
   width: 90%;
   margin-left: 5%;
 }
+
 .content > p{
 width: 90%;
 margin-left: 5%;
@@ -171,6 +174,7 @@ text-align: justify;
 
 }
 
+/*It justifies the text that its inside the about section specificly*/
 .about-section p {
 width: 90%;
 margin-left: 5%;
@@ -182,6 +186,7 @@ text-align: justify;
   width: 90%
 }
 
+/*Gives the h1 a font size and center it*/
 h1{
   font-size: 2.5rem;
   text-align: center;
@@ -196,23 +201,26 @@ h3{
   font-size: 1.5rem;
   text-align: center;
 }
+
+/*
 .content-info {
   text-align: center;
   margin: auto;
 }
-
+*/
 td, th {
   border: 1px solid black;
-   padding: 8px;
+  padding: 8px;
 }
 
+/*Creates table to show and schedule on mobile and desktop*/
 table {
   border: 1px solid black;
   border-collapse: collapse;
   width: 90%;
   margin-left: 5%;
 }
-
+/*For days and hours section of the schedule, gives a purple background color*/
 tr:nth-child(1){
   border: 1px solid black;
   background-color: #8200af;
@@ -220,11 +228,12 @@ tr:nth-child(1){
 tr:nth-child(2){
   border: 1px solid black;
 }
-
+/*For days and hours section of the schedule, gies white color to font*/
 th{
   color: white;
 }
 
+/*There is a div that contains the h2 of our location and the map, specifiyng the map, I gave a size to the map for mobile and desktop*/
 .map iframe {
   border:0;
   height: 400px;
@@ -266,8 +275,10 @@ ul {
   list-style: none;
 }
 
+/*Starts media queries for desktop starting at 1280px*/
 @media screen and (min-width: 1280px) {
 
+  /*For the about section, starts text at the right and img at the left (Purple Rain)*/
   .about-section{
     margin-top: 2rem;
     display: flex;
@@ -289,6 +300,7 @@ ul {
     text-align: center;
     margin: 0;
   }
+  /*For the about section (the one that has the reverse), starts text at the left and img at the right (Our story)*/
 .reverse{
   flex-direction: row-reverse;
 }
