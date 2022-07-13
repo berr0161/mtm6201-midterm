@@ -15,20 +15,20 @@
     <header>
         <!--Creates a big container containing the navigation bar that changes to a hamburguer menu for mobile-->
         <section class="top-nav">
-            <div>
-                Logo Here
-            </div>
+            <a href="index.html" class="logo">
+                <img src="images/Logo.png" alt="logo">
+            </a>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
+                <span class='menu-button'></span>
             </label>
 
             <ul class="menu">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Location</li>
-                <li>Order Now</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Location</a></li>
+                <li><a>Order Now</a></li>
             </ul>
 
         </section>
@@ -137,8 +137,6 @@
                 <img class="graduation" src="images/graduation.jpg" alt="graduation">
             </div>
         </div>
-
-        </div>
     </section>
 
     <!--Creates de customer section that contains the title an both comments, on mobile as a column and on desktop in a row-->
@@ -178,12 +176,12 @@
 
                 <div class="commentator">
                     <picture>
-                        <source srcset="images/nicolas-franco-100_x_150.jpg" media="(max-width:700)">
-                        </source>
-                        <source srcset="images/nicolas-franco.jpg" media="(max-width:1280)">
-                        </source>
+                        <source srcset="images/nicolas-franco-100_x_150.jpg" media="(max-width:700px)">
+                
+                        <source srcset="images/nicolas-franco.jpg" media="(max-width:1280px)">
+    
+                        <img class="barreto" src="images/nicolas-franco.jpg" alt="person">
                     </picture>
-                    <img class="barreto" src="images/nicolas-franco.jpg" alt="person">
                     <dl>
                         <dt>Nicolas Franco</dt>
                         <dd>Events Organizer</dd>
@@ -202,8 +200,8 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">Location</a></li>
             <li><a href="#">Order Now</a></li>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
         </ul>
     </footer>
 

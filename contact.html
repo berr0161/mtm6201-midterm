@@ -12,67 +12,71 @@
 
 <body>
     <!--Creates a big container containing the navigation bar that changes to a hamburguer menu for mobile-->
-    <div class="container">
-        <section class="top-nav">
-            <div>
-                Logo Here
-            </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Location</li>
-                <li>Order Now</li>
-            </ul>
-        </section>
-    </div>
-<!--Creates a big container of the banner, containing all the elements in it-->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Contact Us</h1>
-            <h2>We would <i class="fa-solid fa-heart"></i> to help</h2>
-            <p>Feel free to reach us!</p>
-        </div>
-        <div class="banner-cover"></div>
-    </section>
-
-<!--Creates a layout of an image and a green square showing phone number and email-->
-    <section class="contact">
-        <img class="ice-cream" src="images/contact-image.jpg" alt="ice-cream">
-        <div class="emoji phone">
-            <i class="fa-solid fa-phone"></i>
-            <p>(613)-000-1234</p>
-        </div>
-        <div class="emoji email">
-            <i class="fa-solid fa-envelope"></i>
-            <p>purplerain@gmail.com</p>
-        </div>
-    </section>
-
-<!--Crates the contact form -->
-    <section class="contact-form ">
-        <h2>Send us a message!</h2>
-        <label for="fullname">
-            Full Name
-        </label>
-        <input type="text" placeholder="Full name" id="fullname" name="fullname">
-
-        <label for="email">
-            <Email</label> <input type="email" placeholder="Email" id="email">
-
-                <label for="subject">
-                    Subject
+    <main>
+        <div class="container">
+            <section class="top-nav">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.png" alt="logo">
+                </a>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <span class='menu-button'></span>
                 </label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Location</a></li>
+                    <li><a>Order Now</a></li>
+                </ul>
+            </section>
+        </div>
+        <!--Creates a big container of the banner, containing all the elements in it-->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Contact Us</h1>
+                <h2>We would <i class="fa-solid fa-heart"></i> to help</h2>
+                <p>Feel free to reach us!</p>
+            </div>
+            <div class="banner-cover"></div>
+        </section>
+
+        <!--Creates a layout of an image and a green square showing phone number and email-->
+        <section class="contact">
+            <img class="ice-cream" src="images/contact-image.jpg" alt="ice-cream">
+            <div class="emoji phone">
+                <i class="fa-solid fa-phone"></i>
+                <p>(613)-000-1234</p>
+            </div>
+            <div class="emoji email">
+                <i class="fa-solid fa-envelope"></i>
+                <p>purplerain@gmail.com</p>
+            </div>
+        </section>
+
+        <!--Crates the contact form -->
+        <section class="contact-form ">
+            <h2>Send us a message!</h2>
+            <form action="#" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Full name" id="fullname" name="fullname">
+
+                <label for="email">Yor Email</label>
+                <input type="email" placeholder="cesar@gmail.com" id="email">
+
+                <label for="subject">Subject</label>
+
+
                 <input type="text" placeholder="Subject" id="subject" name="subject">
+
+
                 <button type="submit">Send</button>
-    </section>
+            </form>
+        </section>
+    </main>
 
 
-<!--Creates the footer-->
+    <!--Creates the footer-->
     <footer>
         <div class="copyright">
             <p>Copyright Ⓒ 2022 Puprle Rain. All rights reserverd </p>
@@ -83,8 +87,8 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">Location</a></li>
             <li><a href="#">Order Now</a></li>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
         </ul>
     </footer>
 </body>

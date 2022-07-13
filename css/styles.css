@@ -15,7 +15,15 @@ body {
   font-family: "Raleway";
   box-sizing: border-box;
 }
-
+.top-nav .logo{
+  display: flex;
+  align-items: center;
+  grid-gap: 6px;
+  }
+  .top-nav .logo img{
+    width: 30px;
+    border-radius: 50%;
+    }
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -40,6 +48,11 @@ body {
 .menu>li {
   margin: 0 1rem;
   overflow: hidden;
+}
+
+.menu>li a {
+  color: white;
+ text-decoration: none;
 }
 
 .menu-button-container {

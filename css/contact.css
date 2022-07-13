@@ -6,7 +6,16 @@ h2 {
 
 html, body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
 }
 
 * {
@@ -26,7 +35,24 @@ html, body {
   height: 50px;
   padding: 1em;
 }
-
+.top-nav .logo{
+display: flex;
+align-items: center;
+grid-gap: 6px;
+}
+.top-nav .logo img{
+  width: 30px;
+  border-radius: 50%;
+  }
+  .menu>li a {
+    color: white;
+   text-decoration: none;
+  }
+  
+.container{
+  z-index: 99;
+  position: relative;
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -133,6 +159,7 @@ html, body {
 
 /*For the contact section, it creates a banner with the same background image as about section*/
 .banner{
+  z-index: 9;
   position: relative;
   padding: 10px;
   background-position: center center;
@@ -230,7 +257,6 @@ footer{
   color: #fff;
   padding: 10px;
   background-color: #8200af;
-  margin: auto;
   text-align: center;
 }
 
