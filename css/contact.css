@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 h2 {
   vertical-align: center;
   text-align: center;
@@ -18,6 +19,7 @@ main {
 }
 
 * {
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
 */*Creates nav for desktop*/
@@ -42,7 +44,7 @@ grid-gap: 6px;
   width: 30px;
   border-radius: 50%;
   }
-  
+
   .menu>li a {
     color: white;
    text-decoration: none;

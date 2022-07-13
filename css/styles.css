@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 h2 {
   vertical-align: center;
   text-align: center;
@@ -11,6 +11,7 @@ body {
 }
 
 * {
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
 .top-nav .logo{
@@ -102,7 +103,7 @@ body {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-/*Creates nav for mobile giving the animation and the display of a column, I used z index so is not behind the banner,*/
+/*Creates nav for mobile giving the animation and the display of a column, I used z index so is not behind it*/
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
